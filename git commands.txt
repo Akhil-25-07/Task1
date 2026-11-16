@@ -1,0 +1,183 @@
+version control system
+......................
+
+It is a software which can save each and every modifications of code in different versions
+
+3 Types of version control system
+.................................
+1.local version control system
+2.centralized version control system
+3.Distributed version control system
+
+1.local version control system
+..............................
+
+It is a software which will save all the modifications of code as versions in local system
+
+Drawbacks:
+..........
+1.No integration of code
+2.No Collaboration between developers
+3.If local system fails, developer losses the code Permanently
+
+2.centralized version control system
+....................................
+
+It is a software which will save all the modifications of code in a central place where multiple developers collaboration each other
+
+Drawbacks:
+..........
+1.Internet is Mandatory
+2.If central system fails, developer losses the code Permanently
+
+3.Distributed version control system
+....................................
+
+It is a software which will save all the modifications of code as versions both local system and centralized server
+
+
+features of git
+...............
+1.git tracks source code
+2.maintains & manages the versions of code
+3.makes multiple developers Contributes to same software
+4.possiable to switch back to previous versions
+5.Easy to install
+6.CLI(command line interface)
+7.It is completely open source
+8.GNC (General public license) GPL
+
+
+Difference between git, mercurial and Bazaar
+
+Git	Mercurial	Bazaar
+1.git is open source	1.mercurial is also open source
+	1.Bazaar is also open source
+2.git provide security	2.mercurial is also provide security	2.Bazaar is also provide security
+3.git is very fast	3.mercurial is little slow compare to git	3.Bazaar is not fast as git
+4.git support branching and merging	4.mercurial is also support branching and merging but not as a git	4.Bazaar will support branching only upto same extent
+5.We have stagging area	5.No stagging area	5.No stagging area
+6.git maintain a clear history of code	6.mercurial is also maintain clean history	6.Bazzar provides history of code but not as git
+
+commands
+........
+
+1.To create a local git repository command is
+
+git init
+
+2.To move particular file working directory to stagging area
+
+git add file name
+
+3.To Add multiple specific files working directory to stagging area
+
+git add filename filename
+
+4.To add all files working directory to stagging area
+
+git add .
+
+5.provide user configuration
+............................
+1.global configuration
+......................
+git config --global user.name " "
+git config --global user.email " "
+
+2.local configuration
+.....................
+
+git config  user.name " "
+git config  user.email " "
+
+6.To move particular file stagging area to local repository
+
+git commit filename -m "  "
+
+7.To move all files stagging area to local repository
+
+git commit -m "   "
+
+8.git status: is used to show the current state of the working directory and stagging area
+...........
+
+git log: is used to display the list of all commits in the local repository
+.......
+
+git log --oneline: is used to show commit history in a short and simple format (one line per commit)
+..................
+
+git show commitID: is used to display details of a specific commit
+..................
+
+
+
+Remote Repository:
+..................
+1.Remote repository is a place where multiple developers contributions codes and save all the versions of the code in a common place .
+
+Commands
+........
+
+1.To connect remote repository to local repository we use command
+
+git remote add alias url
+
+2.To check connectivity remote repository to local repository we use command
+
+git remote -v (or) git remote
+
+3.To push code local repository to remote repository we use command
+
+git push alias branch name
+
+4.To copy code remote repository to local repository we use command
+
+git pull alias branch name
+
+
+Branching:
+..........
+1.Branch is a separate part of main repository where developer can work independently without effecting the main code.
+
+Types of branching:
+...................
+1.Master/Main branch
+2.feature branch
+3.Hotfix branch
+4.Release branch
+
+Commands
+........
+1.To create a branch
+
+git branch branch name
+
+2.To get list of branch
+
+git branch --list (or) git branch
+
+3.To switch one branch to another branch
+
+git switch branch name (OR) git checkout branch name
+
+4.To delete a branch
+
+git branch -d branch name (OR) git branch -D branch name
+
+5.To push a branch to remote repository
+
+git push alias branch name
+
+6.To delete a branch only in remote repository
+
+git push alias -d branch name
+
+7.To Rename a branch
+
+git branch -m new branch name
+
+8.To create & switch a branch (This command is use only 2nd and 3rd branch)
+
+git checkout -b branch name

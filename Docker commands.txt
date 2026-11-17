@@ -1,0 +1,33 @@
+docker pull imagename:tag----------> To pull images from docker hub
+
+docker images---------------> To see the all the images
+
+docker run -it imagename:tag---------------> To create and run a container
+
+docker run it --name containername imagename_------------------> To create and run a container
+
+docker ps----------------> To see the running containers
+
+docker ps -a---------------> To see the all containers
+
+docker run -itd imagename:tag------------------>To create and run a container in background
+
+docker exec -it containerID/name /bin/bash-------------> To go inside a container
+
+docker run -itd --name containername imagename:tag-------------->To create and run docker container in the background with a specific name
+
+docker start containerID/name------------->To start a container
+
+docker pause containerID/name------------->To pause a container
+
+docker unpause containerID/name-------------> To unpause a container
+
+docker kill containerID/name (or) docker stop containerID/name--------------> To stop a container
+
+docker rm containerID/name------------>To delete a container
+
+docker rmi imagename/ID-------------> To delete a image
+
+docker inspect containerID/name-------------->To see all the details about the container including with IP address
+
+
